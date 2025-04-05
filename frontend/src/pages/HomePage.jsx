@@ -23,7 +23,7 @@ const Home = () => {
                 try {
                     if(token){
                         // Verify if token is valid
-                        const response = await axios.get("https://kinspace.onrender.com/api/auth/verify-token", {
+                        const response = await axios.get("http://localhost:5000/api/auth/verify-token", {
                             headers: { Authorization: `Bearer ${token}` },
                         });
 

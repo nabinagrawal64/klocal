@@ -22,7 +22,7 @@ export default function SignUp() {
 
         try {
             setLoading(true);
-            const response = await axios.post(`https://kinspace.onrender.com/api/auth/send-otp`, {
+            const response = await axios.post(`http://localhost:5000/api/auth/send-otp`, {
                 headers: {
                     "Content-Type": "application/json",
                 },

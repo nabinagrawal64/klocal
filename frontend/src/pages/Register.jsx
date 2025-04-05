@@ -36,7 +36,7 @@ const Register = () => {
         }
         try {
             setLoading(true);
-            const response = await axios.post("https://kinspace.onrender.com/api/auth/register", formData);
+            const response = await axios.post("http://localhost:5000/api/auth/register", formData);
 
             console.log(response.data)
             
@@ -44,7 +44,7 @@ const Register = () => {
                 console.log("Signup Success:", response.data);
                 alert("Account created successfully!");
                 setAuthData(response.data.user, response.data.token); // Set token in store
-                navigate("/home"); // Redirect on success
+                navigate("/social-feed"); // Redirect on success
             } else {
                 alert("Failed to register");
                 return;

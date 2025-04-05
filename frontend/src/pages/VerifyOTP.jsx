@@ -22,7 +22,7 @@ const VerifyOtp = () => {
         try {
             setLoading(true);
 
-            const response = await axios.post(`https://kinspace.onrender.com/api/auth/verify-otp`, {
+            const response = await axios.post(`http://localhost:5000/api/auth/verify-otp`, {
                 email,
                 otp: otp.join(""), // Convert array to string
             });

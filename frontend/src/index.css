@@ -4,3 +4,23 @@
     font-family: 'Lobster', cursive;
 }
 
+.bg-gradient {
+    background: linear-gradient(109deg, #0042D4 19.17%, #E600FF 85.92%);
+}
+
+.text--gradient {
+    background: linear-gradient(109deg, #0042D4 19.17%, #E600FF 85.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.feed-background{
+    background: radial-gradient(
+        circle at 5% 12%,
+        #F3ACFF 0%,
+        #8c52ff 5%,
+        #5C9DFF 15%,
+        #FF6CDF 25%
+    );
+}
