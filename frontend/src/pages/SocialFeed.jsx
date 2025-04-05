@@ -81,8 +81,8 @@ export default function SocialFeed() {
 
             {/* Posts */}
             <div className="bg-white shadow-md space-y-4 mt-1">
-                <div className="absolute top-[23%] left-0 w-full h-6 bg-gradient-to-t from-white to-transparent z-10 pointer-events-none" />
-                <div className="absolute top-[21%] left-0 w-full h-10 bg-gradient-to-t from-white to-transparent z-10 pointer-events-none" />
+                <div className="absolute top-[28%] left-0 w-full h-6 bg-gradient-to-t from-white to-transparent z-10 pointer-events-none" />
+                <div className="absolute top-[26%] left-0 w-full h-10 bg-gradient-to-t from-white to-transparent z-10 pointer-events-none" />
                 {[1, 2, 3].map((post, index) => (
                     <div key={index} className="pb-4 mt-10 ">
 

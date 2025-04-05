@@ -28,7 +28,7 @@ const Home = () => {
                         });
 
                         if (response.data.valid) {
-                            navigate("/home"); // Redirect if token is valid
+                            navigate("/social-feed"); // Redirect if token is valid
                         } else {
                             logout(); // Expired token, logout user
                         }
